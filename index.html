@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Js Crud Application</title>
+  </head>
+  <body style="color: #fff; background-color: #1d2630">
+    <div class="container mt-5">
+      <div class="text-start">
+        <h1 class="display-5 mb-5 text-center">
+          <strong>CRUD Application</strong>
+        </h1>
+
+        <!--Form HTML-->
+        <div class="main row justify-content-center">
+          <form
+            action=""
+            id="student-form"
+            class="col-10 justify-content-center mb-4"
+            autocomplete="off"
+          >
+            <!--First Name-->
+            <div class="mb-3 col-10">
+              <label for="firstName" class="text-left">First Name</label>
+              <input
+                class="form-control"
+                id="firstName"
+                type="text"
+                placeholder="Enter First Name"
+              />
+            </div>
+
+            <!--Last Name-->
+            <div class="mb-3 col-10">
+              <label for="lastName" class="text-left">Last Name</label>
+              <input
+                class="form-control"
+                id="lastName"
+                type="text"
+                placeholder="Enter Last Name"
+              />
+            </div>
+
+            <!--Roll Number-->
+            <div class="mb-3 col-10">
+              <label for="rollNo" class="text-left">Roll No</label>
+              <input
+                class="form-control"
+                id="rollNo"
+                type="text"
+                placeholder="Enter Roll No"
+              />
+            </div>
+
+            <!-- Submit Button-->
+            <div class="mb-3 col-10">
+              <input
+                class="btn btn-info add-btn"
+                id="rollNo"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </form>
+
+          <div class="col-md-11 mt-5">
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Roll No</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="student-list">
+                <tr>
+                  <td>Dear</td>
+                  <td>Easin</td>
+                  <td>25</td>
+                  <td>
+                    <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                    <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
